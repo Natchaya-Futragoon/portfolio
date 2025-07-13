@@ -1,0 +1,19 @@
+[
+    {
+      "title": "A Tea Before UX",
+      "slug": "tea-before-ux",
+      "date": "2025-07-08",
+      "excerpt": "A moment of steeping leaves before solving design puzzles...",
+      "categories": ["Body", "Mind"],
+      "coverImage": "/images/blog/tea.jpg"
+    },
+    {
+      "title": "Drawing Between Deadlines",
+      "slug": "drawing-breaks",
+      "date": "2025-07-02",
+      "excerpt": "Little breaks with pencil and paper can restore focus.",
+      "categories": ["Creative", "Mind", "Life"],
+      "coverImage": "/images/blog/draw.jpg"
+    }
+  ]
+  

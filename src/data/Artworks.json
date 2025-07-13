@@ -1,0 +1,168 @@
+[
+  {
+    "title": "Newbies in Town",
+    "filename": "colorpencil/NewbiesInTown.png",
+    "medium": ["Color Pencil"],
+    "categories": ["Animal"],
+    "theme": ["cartoon", "character"],
+    "tags": ["fruit", "animal", "city"],
+   
+    "date": "2025-07-09",
+    "description": "A sour-sweet character on a zesty mission"
+  },{
+        "title": "Lemon Lady",
+        "filename": "character/LemonLady.png",
+        "medium": ["Procreate"],
+        "categories": ["Character"],
+        "theme": ["cartoon", "character"],
+        "tags": ["cookie", "kbaked", "cartoon"],
+        "characterId": "fruitlady",
+        "characterSlug": "lemon-lady",
+        "date": "2025-07-09",
+        "description": "A sour-sweet character on a zesty mission"
+      },
+      {
+      "title": "Work Out Time",
+      "filename": "digital/AliceWorkoutforKbaked.mp4",
+      "medium": ["procreate"],
+      "categories": ["K_.Baked"],
+      "theme": ["cartoon", "character"],
+      "tags": ["cookie", "kbaked", "cartoon"],
+      "characterId": "kbaked",
+      "characterSlug": "five-cats",
+      "date": "2025-07-09",
+      "description": "An animated loop of KBaked’s workout routine, adding charm and humor to a wholesome morning scene."
+    },
+    {
+      "title": "JK Hug Cookie",
+      "filename": "digital/JKHugKBaked.png",
+      "medium": ["procreate"],
+      "categories": ["K_.Baked"],
+      "theme": ["cartoon", "character"],
+      "tags": ["cookie", "kbaked", "cartoon"],
+
+      "date": "2025-07-09",
+      "description": "A heartwarming cartoon moment between JK and KBaked, showcasing soft emotional storytelling."
+    },
+    {
+      "title": "Sydney Vibe",
+      "filename": "digital/SydneyBuilding.mp4",
+      "medium": ["procreate"],
+      "categories": ["Digital Illustration"],
+      "theme": ["city", "Architecture"],
+      "tags": ["city", "building", "journal"],
+      "date": "2025-07-09",
+      "description": "An animated illustration capturing Sydney’s lively architecture with personal visual notes."
+    },
+    {
+      "title": "Lonely Living Room",
+      "filename": "digital/LonelyLivingRoom.mp4",
+      "medium": ["procreate"],
+      "categories": ["Digital Illustration"],
+      "theme": ["interior", "emotional"],
+      "tags": ["city", "interior", "journal"],
+      "date": "2025-07-09",
+      "description": "An introspective scene exploring solitude through moody lighting and soft animation."
+    },
+    {
+      "title": "Pistachio Matcha",
+      "filename": "digital/PistachioMatcha.png",
+      "medium": ["procreate"],
+      "categories": ["Sketch Diary", "Digital Illustration"],
+      "theme": ["Food"],
+      "tags": ["matcha", "cafe", "journal"],
+      "date": "2025-07-09",
+      "description": "A dreamy visual diary page of pistachio matcha drinks, rendered with calm tones and delicate linework."
+    },
+    {
+      "title": "Bar Cha Sketch Journal",
+      "filename": "sketchdiary/BarCha.png",
+      "medium": ["procreate"],
+      "categories": ["Sketch Diary", "Digital Illustration"],
+      "theme": ["Food"],
+      "tags": ["matcha", "cafe", "journal"],
+      "date": "2025-07-09",
+      "description": "A visual journal of matcha pairings from Kyoto to Chiang Mai, featuring oat lattes and cozy textures."
+    },
+    {
+      "title": "Fohhide",
+      "filename": "sketchdiary/Fohhide.png",
+      "medium": ["procreate"],
+      "categories": ["Sketch Diary", "Digital Illustration"],
+      "theme": ["Food"],
+      "tags": ["cafe", "coffee", "journal", "diary"],
+      "date": "2025-06-20",
+      "description": "An illustrated review of citrus espresso at Sa Nay Sao Yong café, layered with earthy tones and cozy design."
+    },
+    {
+      "title": "Monte Cristo Sandwich at AKIPAN",
+      "filename": "sketchdiary/MonteCristo.png",
+      "medium": ["procreate"],
+      "categories": ["Sketch Diary", "Digital Illustration"],
+      "theme": ["Food"],
+      "tags": ["cafe", "sandwich", "journal", "diary"],
+      "date": "2025-06-20",
+      "description": "A playful sketch of a French toast sandwich at AKIPAN café, annotated with tasting notes and warm visuals."
+    },
+    {
+      "title": "Tea House",
+      "filename": "sketchdiary/TeaHouse.png",
+      "medium": ["procreate"],
+      "categories": ["Sketch Diary", "Digital Illustration"],
+      "theme": ["Food"],
+      "tags": ["cafe", "tea", "journal", "diary"],
+      "date": "2025-06-20",
+      "description": "A tea-centered sketch capturing Tieguanyin oolong in a traditional teapot, with signage and earthy tones."
+    },
+    {
+      "title": "Chiangmai Cafe",
+      "filename": "sketchdiary/waangpi.png",
+      "medium": ["procreate"],
+      "categories": ["Sketch Diary", "Digital Illustration"],
+      "theme": ["Food"],
+      "tags": ["cafe", "cocktail", "journal", "diary"],
+      "date": "2025-06-20",
+      "description": "A diary collage of drinks and scenery from a Chiangmai café, blending umeshu, interior sketches, and mountains."
+    },
+    {
+      "title": "Golden Bloom",
+      "filename": "sketchdiary/OrangeFlower.png",
+      "medium": ["procreate"],
+      "categories": ["Sketch Diary", "Digital Illustration"],
+      "theme": ["Nature"],
+      "tags": ["flower", "journal", "diary"],
+      "date": "2025-06-20",
+      "description": "A glowing botanical portrait of an orange blossom, combining soft pencil textures and expressive linework."
+    },
+    {
+      "title": "Cherry",
+      "filename": "digital/Cherry.png",
+      "medium": ["procreate"],
+      "categories": ["Sketch Diary", "Digital Illustration"],
+      "theme": ["Nature"],
+      "tags": ["fruit", "cherry"],
+      "date": "2025-06-20",
+      "description": "A sweet still life sketch of ripe cherries, focused on soft forms and minimal strokes."
+    },
+    {
+      "title": "Raspberry",
+      "filename": "digital/Raspbery.png",
+      "medium": ["procreate"],
+      "categories": ["Sketch Diary", "Digital Illustration"],
+      "theme": ["Nature"],
+      "tags": ["fruit", "raspberry"],
+      "date": "2025-06-20",
+      "description": "A vibrant red raspberry sketched with detail and charm for a journal-style botanical study."
+    },
+    {
+      "title": "Rose",
+      "filename": "digital/Rose.png",
+      "medium": ["procreate"],
+      "categories": ["Sketch Diary", "Digital Illustration"],
+      "theme": ["Nature"],
+      "tags": ["flower", "rose"],
+      "date": "2025-06-20",
+      "description": "A romantic visual of a blooming rose rendered in digital pencil with soft natural shading."
+    }
+  ]
+  
