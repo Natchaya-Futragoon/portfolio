@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -20,10 +20,10 @@ import CharacterDetailPage from './pages/CharacterDetailPage';
 
 function App() {
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <Layout />
-    </Router>
+    </>
   );
 }
 
@@ -32,23 +32,19 @@ function Layout() {
 
   return (
     <>
-      {/* Render Navbar globally for all pages except the home page */}
       {location.pathname !== '/' && <Navbar className="top-navbar" />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/wilia" element={<WiliaPage />} />
-      <Route path="/speakmate" element={<SpeakMatePage />} />
-      <Route path="/fivecatweb" element={<FiveCatsGroceryPage />} />
-      <Route path="/augmentedmemory" element={<AugmentedMemoryPage />} />
+        <Route path="/speakmate" element={<SpeakMatePage />} />
+        <Route path="/fivecatweb" element={<FiveCatsGroceryPage />} />
+        <Route path="/augmentedmemory" element={<AugmentedMemoryPage />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/uxprojects" element={<UXProjects />} />
         <Route path="/characters" element={<CharacterWorldDesignPage />} />
         <Route path="/artworks" element={<ArtWorks />} />
         <Route path="/brewandbreath" element={<BrewandBreath />} />
         <Route path="/characters/:slug" element={<CharacterDetailPage />} />
-
-        {/* Add more routes as needed */}
-
       </Routes>
     </>
   );

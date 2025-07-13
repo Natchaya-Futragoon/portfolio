@@ -1,7 +1,7 @@
 [
   {
     "title": "Newbies in Town",
-    "filename": "colorpencil/NewbiesInTown.png",
+    "filename": "images/artworks/colorpencil/NewbiesInTown.png",
     "medium": ["Color Pencil"],
     "categories": ["Animal"],
     "theme": ["cartoon", "character"],
@@ -11,7 +11,7 @@
     "description": "A sour-sweet character on a zesty mission"
   },{
         "title": "Lemon Lady",
-        "filename": "character/LemonLady.png",
+        "filename": "images/artworks/character/LemonLady.png",
         "medium": ["Procreate"],
         "categories": ["Character"],
         "theme": ["cartoon", "character"],
@@ -23,7 +23,7 @@
       },
       {
       "title": "Work Out Time",
-      "filename": "digital/AliceWorkoutforKbaked.mp4",
+      "filename": "images/artworks/digital/AliceWorkoutforKbaked.mp4",
       "medium": ["procreate"],
       "categories": ["K_.Baked"],
       "theme": ["cartoon", "character"],
@@ -35,7 +35,7 @@
     },
     {
       "title": "JK Hug Cookie",
-      "filename": "digital/JKHugKBaked.png",
+      "filename": "images/artworks/digital/JKHugKBaked.png",
       "medium": ["procreate"],
       "categories": ["K_.Baked"],
       "theme": ["cartoon", "character"],
@@ -46,7 +46,7 @@
     },
     {
       "title": "Sydney Vibe",
-      "filename": "digital/SydneyBuilding.mp4",
+      "filename": "images/artworks/digital/SydneyBuilding.mp4",
       "medium": ["procreate"],
       "categories": ["Digital Illustration"],
       "theme": ["city", "Architecture"],
@@ -56,7 +56,7 @@
     },
     {
       "title": "Lonely Living Room",
-      "filename": "digital/LonelyLivingRoom.mp4",
+      "filename": "images/artworks/digital/LonelyLivingRoom.mp4",
       "medium": ["procreate"],
       "categories": ["Digital Illustration"],
       "theme": ["interior", "emotional"],
@@ -66,7 +66,7 @@
     },
     {
       "title": "Pistachio Matcha",
-      "filename": "digital/PistachioMatcha.png",
+      "filename": "images/artworks/digital/PistachioMatcha.png",
       "medium": ["procreate"],
       "categories": ["Sketch Diary", "Digital Illustration"],
       "theme": ["Food"],
@@ -76,7 +76,7 @@
     },
     {
       "title": "Bar Cha Sketch Journal",
-      "filename": "sketchdiary/BarCha.png",
+      "filename": "images/artworks/sketchdiary/BarCha.png",
       "medium": ["procreate"],
       "categories": ["Sketch Diary", "Digital Illustration"],
       "theme": ["Food"],
@@ -86,7 +86,7 @@
     },
     {
       "title": "Fohhide",
-      "filename": "sketchdiary/Fohhide.png",
+      "filename": "images/artworks/sketchdiary/Fohhide.png",
       "medium": ["procreate"],
       "categories": ["Sketch Diary", "Digital Illustration"],
       "theme": ["Food"],
@@ -96,7 +96,7 @@
     },
     {
       "title": "Monte Cristo Sandwich at AKIPAN",
-      "filename": "sketchdiary/MonteCristo.png",
+      "filename": "images/artworks/sketchdiary/MonteCristo.png",
       "medium": ["procreate"],
       "categories": ["Sketch Diary", "Digital Illustration"],
       "theme": ["Food"],
@@ -106,7 +106,7 @@
     },
     {
       "title": "Tea House",
-      "filename": "sketchdiary/TeaHouse.png",
+      "filename": "images/artworks/sketchdiary/TeaHouse.png",
       "medium": ["procreate"],
       "categories": ["Sketch Diary", "Digital Illustration"],
       "theme": ["Food"],
@@ -116,7 +116,7 @@
     },
     {
       "title": "Chiangmai Cafe",
-      "filename": "sketchdiary/waangpi.png",
+      "filename": "images/artworks/sketchdiary/waangpi.png",
       "medium": ["procreate"],
       "categories": ["Sketch Diary", "Digital Illustration"],
       "theme": ["Food"],
@@ -126,7 +126,7 @@
     },
     {
       "title": "Golden Bloom",
-      "filename": "sketchdiary/OrangeFlower.png",
+      "filename": "images/artworks/sketchdiary/OrangeFlower.png",
       "medium": ["procreate"],
       "categories": ["Sketch Diary", "Digital Illustration"],
       "theme": ["Nature"],
@@ -136,7 +136,7 @@
     },
     {
       "title": "Cherry",
-      "filename": "digital/Cherry.png",
+      "filename": "images/artworks/digital/Cherry.png",
       "medium": ["procreate"],
       "categories": ["Sketch Diary", "Digital Illustration"],
       "theme": ["Nature"],
@@ -146,7 +146,7 @@
     },
     {
       "title": "Raspberry",
-      "filename": "digital/Raspbery.png",
+      "filename": "images/artworks/digital/Raspbery.png",
       "medium": ["procreate"],
       "categories": ["Sketch Diary", "Digital Illustration"],
       "theme": ["Nature"],
@@ -156,7 +156,7 @@
     },
     {
       "title": "Rose",
-      "filename": "digital/Rose.png",
+      "filename": "images/artworks/digital/Rose.png",
       "medium": ["procreate"],
       "categories": ["Sketch Diary", "Digital Illustration"],
       "theme": ["Nature"],

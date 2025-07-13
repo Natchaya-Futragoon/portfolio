@@ -81,14 +81,14 @@ const Home = () => {
             >
               <div className="absolute w-full h-full backface-hidden rounded-full overflow-hidden shadow-lg border-2 border-gray-300">
                 <img
-                  src="/avatar.png"
+                  src={`${import.meta.env.BASE_URL}avatar.png`}
                   alt="Alice Avatar"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="absolute w-full h-full rotate-y-180 backface-hidden rounded-full overflow-hidden shadow-lg border-2 border-gray-300">
                 <img
-                  src="/real-avatar.png"
+                  src={`${import.meta.env.BASE_URL}real-avatar.png`}
                   alt="Real Alice"
                   className="w-full h-full object-cover"
                 />

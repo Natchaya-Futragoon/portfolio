@@ -106,7 +106,8 @@ const Artworks = () => {
           >
             {art.filename.toLowerCase().endsWith(".mp4") ? (
               <video
-                src={`/images/artworks/${art.filename}`}
+              src={`${import.meta.env.BASE_URL}${art.filename}`} 
+
                 className="w-[90%] h-[90%] object-contain transition-transform duration-300 group-hover:scale-105"
                 autoPlay
                 muted
@@ -115,7 +116,7 @@ const Artworks = () => {
               />
             ) : (
               <img
-                src={`/images/artworks/${art.filename}`}
+                src={`${import.meta.env.BASE_URL}${art.filename}`}
                 alt={art.title}
                 className="w-[90%] h-[90%] object-contain transition-transform duration-300 group-hover:scale-105"
               />
