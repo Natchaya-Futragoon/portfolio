@@ -9,6 +9,7 @@ const ProjectPage = ({
   goal,
   image,
   video,
+  youtube, // ✅ Add this
   timeline,
   team,
   role,
@@ -19,7 +20,7 @@ const ProjectPage = ({
   const [fade, setFade] = useState(true);
 
   useEffect(() => {
-    if (!video && Array.isArray(image) && image.length > 1) {
+    if (!video && !youtube && Array.isArray(image) && image.length > 1) {
       const interval = setInterval(() => {
         setFade(false);
         setTimeout(() => {
@@ -29,26 +30,35 @@ const ProjectPage = ({
       }, 3000);
       return () => clearInterval(interval);
     }
-  }, [image, video]);
+  }, [image, video, youtube]);
 
   const currentImage = Array.isArray(image) ? image[currentImageIndex] : image;
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-14 space-y-12">
-      {/* Title */}
       <h1 className="text-4xl font-bold text-center">{title}</h1>
 
-      {/* Media block */}
-      {video ? (
+      {/* ✅ Media block logic cleaned */}
+      {youtube ? (
+       <div className="relative w-full max-w-5xl h-[640px] mx-auto rounded-lg overflow-hidden shadow-md">
+       <iframe
+         src={youtube}
+            title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full rounded-lg shadow"
+          ></iframe>
+        </div>
+      ) : video ? (
         <div className="relative w-full max-w-5xl h-[500px] mx-auto rounded-lg overflow-hidden shadow-md">
           <video
             src={video}
             className="w-full h-full object-cover"
             controls
-            playsInline
             autoPlay
             muted
             loop
+            playsInline
           />
         </div>
       ) : (
@@ -67,65 +77,60 @@ const ProjectPage = ({
         </div>
       )}
 
-      {/* Overview */}
+      {/* Sections */}
       <section>
         <h2 className="text-2xl font-semibold mb-2">Overview</h2>
         <p>{overview}</p>
       </section>
 
-      {/* Info blocks */}
       {(timeline || team || role || tools) && (
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {timeline && (
             <div>
               <h3 className="text-xl font-semibold mb-1">⏳ Timeline</h3>
-              <p className="text-gray-700">{timeline}</p>
+              <p>{timeline}</p>
             </div>
           )}
           {team && (
             <div>
               <h3 className="text-xl font-semibold mb-1">👥 Team</h3>
-              <p className="text-gray-700">{team}</p>
+              <p>{team}</p>
             </div>
           )}
           {role && (
             <div>
               <h3 className="text-xl font-semibold mb-1">🎯 My Role</h3>
-              <p className="text-gray-700">{role}</p>
+              <p>{role}</p>
             </div>
           )}
           {tools && (
             <div>
               <h3 className="text-xl font-semibold mb-1">🛠 Tools</h3>
-              <p className="text-gray-700">{tools}</p>
+              <p>{tools}</p>
             </div>
           )}
         </section>
       )}
 
-      {/* Problem */}
       <section>
         <h2 className="text-2xl font-semibold mb-2">Problem</h2>
-        <div className="space-y-2">{problem}</div>
+        <div>{problem}</div>
       </section>
 
-      {/* Goal */}
       <section>
         <h2 className="text-2xl font-semibold mb-2">Goal</h2>
         <p>{goal}</p>
       </section>
 
-      {/* Process */}
       <section>
         <h2 className="text-2xl font-semibold mb-2">Process</h2>
-        <p className="mb-4 whitespace-pre-line">{process}</p>
+        <p className="whitespace-pre-line mb-4">{process}</p>
         {children}
       </section>
 
-      {/* Outcome */}
       <section>
         <h2 className="text-2xl font-semibold mb-2">Outcome</h2>
-        <div className="space-y-2">{outcome}</div>
+        <div>{outcome}</div>
       </section>
     </div>
   );

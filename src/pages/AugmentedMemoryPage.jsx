@@ -6,7 +6,8 @@ const AugmentedMemoryPage = () => {
     <>
       <ProjectPage
         title="Augmented Memory"
-        video="/videos/probe_kits.mp4"
+        youtube="https://www.youtube.com/embed/IXQfpltD1Oc"
+
         overview="This project explores how Augmented Reality (AR) can enrich the recall of emotional memories—especially those involving loved ones. By combining AR with self-recorded videos, the study examines how immersive features (like filters and prompts) enhance memory vividness, emotional engagement, and the desire to reconnect."
         timeline="6 weeks"
         team="Individual"

@@ -24,7 +24,7 @@ const ArtworkModal = ({ artwork, onClose }) => {
         <div className="relative" onMouseMove={handleMouseMove}>
           {isVideo ? (
             <video
-              src={`/images/artworks/${artwork.filename}`}
+            src={`${import.meta.env.BASE_URL}${art.filename}`}
               className="w-full max-h-[70vh] object-contain bg-white"
               controls
               autoPlay
