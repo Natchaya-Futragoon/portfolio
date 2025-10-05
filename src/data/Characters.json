@@ -1,5 +1,15 @@
 [
   {
+    "name": "Lemon Lady",
+    "slug": "lemon-lady",
+    "coverImage": "/images/artworks/character/LemonLady.png",
+    "tagline": "A sour-sweet character on a zesty mission",
+    "sketches": [
+      "/images/artworks/character/LemonLady-sketch1.png"
+    ],
+    "story": "I’m passionate about character design and enjoy experimenting with creating fun and engaging characters. One of my favourite projects involves combining a girl with a fruit—especially a lemon, which is my favourite due to its bright color and unique flavor, a perfect balance of sour with a hint of sweetness.\n\nFor this character, I began by studying the shape and structure of a lemon, experimenting with various cuts and perspectives. After several iterations, I found a version that captured the essence of fruit while maintaining a playful and appealing aesthetic.\n\nThrough the process, I aimed to create a design that not only stands out visually but also tells a story and evokes a sense of joy and creativity."
+  },
+  {
     "name": "Air Guan Guan",
     "slug": "air-guan-guan",
     "coverImage": "/images/artworks/character/AirGuanGuan.png",
@@ -15,18 +25,6 @@
     "story": "This project's idea came from my desire to design a character that could reach a specific target audience. I thought about creating a career-based character and came up with a flight attendant—my own former role—so I could draw on direct insights from users.\n\nI observed my coworkers’ behaviors and talked with colleagues and friends about what we love and what frustrates us in this job. For example, many people assume flight attendants get to travel and explore every destination. In reality, we often just want a soft bed and some rest when we land. Real travel? It mostly happens in our dreams!\n\nI used all the insights I gathered to design this character with recognizable gestures and poses unique to our job—like take-off, landing, and meal service. I dressed her in a hat and scarf that strongly symbolize a flight attendant uniform, and I chose pink and deep purple to make sure the design doesn’t resemble any existing airline.\n\nThe initial drawings and colors were done using the Sketches app on my iPad, then finalized in Photoshop before being submitted as a LINE sticker set."
   },
   {
-      "name": "Lemon Lady",
-      "slug": "lemon-lady",
-      "coverImage": "/images/artworks/character/LemonLady.png",
-      "tagline": "A sour-sweet character on a zesty mission",
-      "sketches": [
-        "/images/artworks/character/LemonLady-sketch1.png"
-      ],
-      
-      "story": "I’m passionate about character design and enjoy experimenting with creating fun and engaging characters. One of my favourite projects involves combining a girl with a fruit—especially a lemon, which is my favourite due to its bright color and unique flavor, a perfect balance of sour with a hint of sweetness.\n\nFor this character, I began by studying the shape and structure of a lemon, experimenting with various cuts and perspectives. After several iterations, I found a version that captured the essence of fruit while maintaining a playful and appealing aesthetic.\n\nThrough the process, I aimed to create a design that not only stands out visually but also tells a story and evokes a sense of joy and creativity."
-    
-  },
-  {
     "name": "Ice Cream Girl",
     "slug": "ice-cream-girl",
     "coverImage": "/images/artworks/character/IcecreamGirl.png",
@@ -34,14 +32,13 @@
     "sketches": [],
     "story": ""
   },
-
   {
     "name": "Five Cats",
     "slug": "five-cats",
     "coverImage": "/images/artworks/character/FiveCats.png",
     "tagline": "A cozy team of feline mischief-makers",
     "sketches": [],
-    "story": ""
+    "story": "Five Cats is a character collection born from my love for cozy mischief and heartwarming charm. Each cat has its own personality—K_BREWED loves slow mornings and fresh coffee, K_BAKED is sweet and warm like a fresh loaf, K_CHILL enjoys sunbathing in the window, K_PLAYFUL always finds a way to turn a ribbon into an adventure, and K_CURIOUS never stops poking their nose where it doesn’t belong.\n\nOriginally created as a passion project during a quiet season, these cats became companions in my creative journey. Their quirks reflect different parts of my own rhythm—rest, play, curiosity, and comfort. I sketch them often, imagining scenes from their shared apartment: pillow forts, shared snacks, and silent understanding.\n\nThey now live on my art page and are gradually making their way into stickers, web comics, and playful product ideas. Each drawing session feels like catching up with dear friends."
   },
   {
     "name": "Alice",
@@ -55,6 +52,17 @@
     ],
     "sketches": [],
     "story": ""
+  },
+  {
+    "name": "Puffernyx",
+    "slug": "puffernyx",
+    "coverImage": "/images/artworks/character/Puffernyx.png",
+    "tagline": "Goopy, goofy, and good-hearted troublemakers",
+    "finishedImages": [],
+    "sketches": [
+      "/images/artworks/character/Puffernyx-sketch1.png"
+    ],
+    "story": "There are two stages in this work—character creation and animation. While doodling with a new color palette, I noticed shapes coming alive after I added eyes. That led to the spontaneous creation of the 'Slime Family'—jelly-like beings inspired by cartoons where slimes could morph and shift into playful forms.\n\nEach character developed its own identity and transformation style, with matching colors and personalities. After designing them, I animated basic movements using Procreate, drawing four frames per action. For example, the green cloud slime rains, and others bounce, stretch, or wiggle.\n\nNext, I plan to build their world: define relationships, best friends, and rivals. Each member of the Slime Fam will have its backstory and quirks—setting the stage for a whimsical illustrated or animated series."
   },
   {
     "name": "Fluffy Lion",
@@ -84,20 +92,6 @@
     "sketches": [
       "/images/artworks/character/SlimeFamily-sketch1.png",
       "/images/artworks/character/SlimeFamily-sketch2.png"
-    ],
-    "story": "There are two stages in this work—character creation and animation. While doodling with a new color palette, I noticed shapes coming alive after I added eyes. That led to the spontaneous creation of the 'Slime Family'—jelly-like beings inspired by cartoons where slimes could morph and shift into playful forms.\n\nEach character developed its own identity and transformation style, with matching colors and personalities. After designing them, I animated basic movements using Procreate, drawing four frames per action. For example, the green cloud slime rains, and others bounce, stretch, or wiggle.\n\nNext, I plan to build their world: define relationships, best friends, and rivals. Each member of the Slime Fam will have its backstory and quirks—setting the stage for a whimsical illustrated or animated series."
-  },
-  {
-    "name": "Puffernyx",
-    "slug": "puffernyx",
-    "coverImage": "/images/artworks/character/Puffernyx.png",
-    "tagline": "Goopy, goofy, and good-hearted troublemakers",
-    "finishedImages": [
-      
-    ],
-    "sketches": [
-      "/images/artworks/character/Puffernyx-sketch1.png"
-      
     ],
     "story": "There are two stages in this work—character creation and animation. While doodling with a new color palette, I noticed shapes coming alive after I added eyes. That led to the spontaneous creation of the 'Slime Family'—jelly-like beings inspired by cartoons where slimes could morph and shift into playful forms.\n\nEach character developed its own identity and transformation style, with matching colors and personalities. After designing them, I animated basic movements using Procreate, drawing four frames per action. For example, the green cloud slime rains, and others bounce, stretch, or wiggle.\n\nNext, I plan to build their world: define relationships, best friends, and rivals. Each member of the Slime Fam will have its backstory and quirks—setting the stage for a whimsical illustrated or animated series."
   }

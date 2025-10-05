@@ -83,7 +83,7 @@ outcome={
       {/* Download link placed outside ProjectPage */}
       <section className="text-center my-10">
         <a
-          href="/files/Augmented-Memory-Probe-Study.pdf"
+          href={`${import.meta.env.BASE_URL}files/Augmented-Memory-Probe-Study.pdf`}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition"

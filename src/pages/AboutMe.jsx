@@ -56,14 +56,14 @@ const AboutMe = () => {
               >
                 <div className="absolute w-full h-full backface-hidden rounded-full overflow-hidden shadow-md">
                   <img
-                    src="/avatar.png"
+                    src={`${import.meta.env.BASE_URL}avatar.png`}
                     alt="Alice Front"
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <div className="absolute w-full h-full rotate-y-180 backface-hidden rounded-full overflow-hidden shadow-md">
+                <div className="absolute w-full h-full rotate-y-180 backface-hidden rounded-full bg-white overflow-hidden shadow-md">
                   <img
-                    src="/kaewfuu.png"
+                    src={`${import.meta.env.BASE_URL}kaewfuu.png`}
                     alt="Alice Back"
                     className="object-cover w-full h-full"
                   />

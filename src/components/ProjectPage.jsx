@@ -40,42 +40,42 @@ const ProjectPage = ({
 
       {/* ✅ Media block logic cleaned */}
       {youtube ? (
-       <div className="relative w-full max-w-5xl h-[640px] mx-auto rounded-lg overflow-hidden shadow-md">
-       <iframe
-         src={youtube}
-            title="YouTube video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="w-full h-full rounded-lg shadow"
-          ></iframe>
-        </div>
-      ) : video ? (
-        <div className="relative w-full max-w-5xl h-[500px] mx-auto rounded-lg overflow-hidden shadow-md">
-          <video
-            src={video}
-            className="w-full h-full object-cover"
-            controls
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
-        </div>
-      ) : (
-        <div className="relative w-full max-w-5xl h-[700px] mx-auto rounded-lg overflow-hidden shadow-md">
-          {Array.isArray(image) &&
-            image.map((img, index) => (
-              <img
-                key={index}
-                src={img}
-                alt={title}
-                className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
-                  index === currentImageIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
-                }`}
-              />
-            ))}
-        </div>
-      )}
+  <div className="relative w-full aspect-[16/9] mx-auto rounded-lg overflow-hidden shadow-md">
+    <iframe
+      src={youtube}
+      title="YouTube video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+      className="absolute top-0 left-0 w-full h-full"
+    ></iframe>
+  </div>
+) : video ? (
+  <div className="relative w-full aspect-[16/9] mx-auto rounded-lg overflow-hidden shadow-md">
+    <video
+      src={video}
+      className="absolute top-0 left-0 w-full h-full object-cover"
+      controls
+      autoPlay
+      muted
+      loop
+      playsInline
+    />
+  </div>
+) : Array.isArray(image) ? (
+  <div className="relative w-full aspect-[4/3] mx-auto rounded-lg overflow-hidden shadow-md">
+    {image.map((img, index) => (
+      <img
+        key={index}
+        src={img}
+        alt={title}
+        className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-1000 ease-in-out ${
+          index === currentImageIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+        }`}
+      />
+    ))}
+  </div>
+) : null}
+
 
       {/* Sections */}
       <section>

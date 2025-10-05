@@ -3,111 +3,99 @@ import artworksData from "../data/artworks.json";
 import Modal from "../components/ArtworkModal";
 
 const mediums = ["All", "Procreate", "Watercolor", "Color Pencil", "Photography"];
-const themes = ["All", "Nature", "Character", "Architecture", "Food", "Animal"];
-const projectTypes = ["Sketch Diary", "Five Cats", "K_.Baked", "Cat Oracle"];
+const categories = ["All", "Nature", "Character", "Architecture", "Food", "Animal"];
+const themes = ["Sketch Diary", "Five Cats", "K_.Baked", "Cat Oracle"]; // now themes
 
-const Artworks = () => {
-  const [selectedMedium, setSelectedMedium] = useState("All");
-  const [selectedTheme, setSelectedTheme] = useState("All");
-  const [selectedTypes, setSelectedTypes] = useState([]);
-  const [searchTag, setSearchTag] = useState("");
-  const [selectedArtwork, setSelectedArtwork] = useState(null);
+const shuffleArray = (arr) => [...arr].sort(() => Math.random() - 0.5);
 
-  const filteredArtworks = artworksData.filter((art) => {
-    const matchesMedium =
-      selectedMedium === "All" || (art.medium && art.medium.includes(selectedMedium));
+export default function Artworks() {
+  const [medium, setMedium] = useState("All");
+  const [category, setCategory] = useState("All");
+  const [themesChecked, setThemesChecked] = useState([]);
+  const [modalArt, setModalArt] = useState(null);
+  const [shuffled] = useState(() => shuffleArray(artworksData));
 
-    const matchesTheme =
-      selectedTheme === "All" || (art.theme && art.theme.includes(selectedTheme));
-
-    const matchesType =
-      selectedTypes.length === 0 ||
-      (art.categories && selectedTypes.some((type) => art.categories.includes(type)));
-
-    const matchesSearch =
-      searchTag.trim() === "" ||
-      (art.tags && art.tags.some((tag) =>
-        tag.toLowerCase().includes(searchTag.toLowerCase())
-      ));
-
-    return matchesMedium && matchesTheme && matchesType && matchesSearch;
-  });
-
-  const toggleType = (type) => {
-    setSelectedTypes((prev) =>
-      prev.includes(type)
-        ? prev.filter((t) => t !== type)
-        : [...prev, type]
+  const toggleTheme = (theme) =>
+    setThemesChecked((prev) =>
+      prev.includes(theme) ? prev.filter((t) => t !== theme) : [...prev, theme]
     );
+
+  const handleDropdownChange = (setter) => (e) => {
+    setter(e.target.value);
+    setThemesChecked([]); // reset theme filters when dropdown changes
   };
+
+  const filtered = shuffled.filter((art) => {
+    const m = art.medium?.map((x) => x.toLowerCase()) ?? [];
+    const c = art.categories ?? [];
+    const t = art.theme ?? [];
+
+    const mediumOK = medium === "All" || m.includes(medium.toLowerCase());
+    const categoryOK = category === "All" || c.includes(category);
+    const themeOK =
+      themesChecked.length === 0 ||
+      themesChecked.some((th) => t.includes(th));
+
+    return mediumOK && categoryOK && themeOK;
+  });
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-16">
-      <h1 className="text-3xl font-bold text-center mb-6">🎨 Art Gallery </h1>
-      <p className="text-center text-gray-600 mb-10">
+      <h1 className="text-3xl font-bold text-center mb-6">🎨 Art Gallery</h1>
+      <p className="text-center text-gray-600 dark:text-gray-300 mb-10">
         A collection of story-rich visual works in digital, watercolor, and more.
       </p>
 
-      {/* Filters */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-10">
+      {/* Dropdowns */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+        {/* Medium Dropdown */}
         <select
-          value={selectedMedium}
-          onChange={(e) => setSelectedMedium(e.target.value)}
+          value={medium}
+          onChange={handleDropdownChange(setMedium)}
           className="border px-3 py-2 rounded"
         >
-          {mediums.map((medium) => (
-            <option key={medium} value={medium}>
-              Medium: {medium}
-            </option>
+          {mediums.map((m) => (
+            <option key={m} value={m}>Medium: {m}</option>
           ))}
         </select>
 
+        {/* Category Dropdown (now topic-based) */}
         <select
-          value={selectedTheme}
-          onChange={(e) => setSelectedTheme(e.target.value)}
+          value={category}
+          onChange={handleDropdownChange(setCategory)}
           className="border px-3 py-2 rounded"
         >
-          {themes.map((theme) => (
-            <option key={theme} value={theme}>
-              Theme: {theme}
-            </option>
+          {categories.map((cat) => (
+            <option key={cat} value={cat}>Category: {cat}</option>
           ))}
         </select>
+      </div>
 
-        <input
-          type="text"
-          placeholder="🔍 Search tags..."
-          value={searchTag}
-          onChange={(e) => setSearchTag(e.target.value)}
-          className="border px-3 py-2 rounded"
-        />
-
-        <div className="flex flex-wrap gap-2 items-center">
-          {projectTypes.map((type) => (
-            <label key={type} className="flex items-center space-x-1 text-sm">
-              <input
-                type="checkbox"
-                checked={selectedTypes.includes(type)}
-                onChange={() => toggleType(type)}
-              />
-              <span>{type}</span>
-            </label>
-          ))}
-        </div>
+      {/* Theme Checkboxes (now project groups) */}
+      <div className="mb-10 flex flex-wrap gap-4">
+        {themes.map((theme) => (
+          <label key={theme} className="flex items-center space-x-2 text-sm break-words">
+            <input
+              type="checkbox"
+              checked={themesChecked.includes(theme)}
+              onChange={() => toggleTheme(theme)}
+            />
+            <span>{theme}</span>
+          </label>
+        ))}
       </div>
 
       {/* Artwork Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {filteredArtworks.map((art, index) => (
+        {filtered.map((art, index) => (
           <div
             key={index}
             className="group aspect-square border-2 border-gray-300 rounded-xl shadow-md hover:shadow-xl transition duration-300 cursor-pointer bg-white flex items-center justify-center overflow-hidden"
-            onClick={() => setSelectedArtwork(art)}
+            onClick={() => setModalArt(art)}
           >
             {art.filename.toLowerCase().endsWith(".mp4") ? (
               <video
-              src={`${import.meta.env.BASE_URL}${art.filename}`} 
-
+                src={`${import.meta.env.BASE_URL}${art.filename}`}
                 className="w-[90%] h-[90%] object-contain transition-transform duration-300 group-hover:scale-105"
                 autoPlay
                 muted
@@ -125,12 +113,10 @@ const Artworks = () => {
         ))}
       </div>
 
-      {/* Modal Outside the Grid */}
-      {selectedArtwork && (
-        <Modal artwork={selectedArtwork} onClose={() => setSelectedArtwork(null)} />
+      {/* Modal */}
+      {modalArt && (
+        <Modal artwork={modalArt} onClose={() => setModalArt(null)} />
       )}
     </div>
   );
-};
-
-export default Artworks;
+}

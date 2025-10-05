@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import Navbar from "../components/navbar";
 import SkillCard from "../components/SkillCard";
-import SkillIcon from "../components/SkillIcon";
 
 const Home = () => {
   const avatarRef = useRef(null);
@@ -39,11 +38,30 @@ const Home = () => {
   }, [hovering]);
 
   const projects = [
-    { id: 1, title: "Wilia", image: "/public/images/projects/wilia//wilia.jpg", link: "/wilia" },
-    { id: 2, title: "SpeakMate", image: "/public/images/projects/speakmate/speakmate.jpg", link: "/speakmate"  },
-    { id: 3, title: "Grocery Store Website", image: "/public/images/projects/fivecatweb/fivecatweb.jpg", link: "/fivecatweb"  },
-    { id: 4, title: "Augmented Memory", image: "/public/images/projects/augmentedmemory/augmentedmemory.jpg", link: "/augmentedmemory"  },
-
+    {
+      id: 1,
+      title: "Wilia Web App",
+      image: `${import.meta.env.BASE_URL}images/projects/wilia/wilia.jpg`,
+      link: "/wilia",
+    },
+    {
+      id: 2,
+      title: "SpeakMate IOS App",
+      image: `${import.meta.env.BASE_URL}images/projects/speakmate/speakmate.jpg`,
+      link: "/speakmate",
+    },
+    {
+      id: 3,
+      title: "Cats Grocery Store Website",
+      image: `${import.meta.env.BASE_URL}images/projects/fivecatweb/fivecatweb.jpg`,
+      link: "/fivecatweb",
+    },
+    {
+      id: 4,
+      title: "Augmented Memory",
+      image: `${import.meta.env.BASE_URL}images/projects/augmentedmemory/augmentedmemory.jpg`,
+      link: "/augmentedmemory",
+    },
   ];
 
   const settings = {
@@ -86,7 +104,7 @@ const Home = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute w-full h-full rotate-y-180 backface-hidden rounded-full overflow-hidden shadow-lg border-2 border-gray-300">
+              <div className="absolute w-full h-full rotate-y-180 backface-hidden bg-white  rounded-full overflow-hidden shadow-lg border-2 border-gray-300">
                 <img
                   src={`${import.meta.env.BASE_URL}real-avatar.png`}
                   alt="Real Alice"
@@ -98,7 +116,7 @@ const Home = () => {
         </div>
 
         <h1 className="text-xl font-bold text-gray-600 dark:text-gray-300 mb-1 h-[1.5em] sm:h-[2em]">
-          Hi, I'm Alice. I'm a <span className="inline-block"></span>
+          Hi, I'm Alice. I'm a
         </h1>
 
         <p className="text-3xl sm:text-4xl font-bold text-gray-800 dark:text-white mb-2">
@@ -120,14 +138,15 @@ const Home = () => {
           </span>
         </p>
 
-        <p className="text-base text-gray-500 dark:text-gray-400 max-w-2xl mt-2">
+        <p className="text-base text-gray-600 dark:text-gray-300 max-w-2xl mt-2">
           I design gamified, emotionally engaging experiences to support growth and motivation.
         </p>
       </section>
 
-      {/* Navbar appears below the "I design..." section */}
+      {/* Sticky Navbar below hero */}
       <Navbar className="sticky-navbar" />
 
+      {/* === Featured Projects === */}
       <section id="featured" data-aos="fade-up" className="mt-20 w-full">
         <h2 className="text-2xl font-semibold mb-6 text-left">✨ Featured Projects</h2>
         <Slider {...settings} className="max-w-5xl mx-auto">
@@ -138,7 +157,8 @@ const Home = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-[80vh] object-cover border-[2px] border-slate shadow-lg shadow-slate-400 dark:border-gray-700 rounded-lg"                  />
+                    className="w-full h-auto max-h-[80vh] object-contain border-2 border-slate shadow-lg shadow-slate-400 dark:border-gray-700 rounded-lg"
+                  />
                   <div className="p-6 text-center">
                     <h3 className="text-2xl font-bold text-gray-800 dark:text-white">
                       {project.title}
@@ -147,7 +167,6 @@ const Home = () => {
                 </div>
               </div>
             );
-
             return project.link ? (
               <Link to={project.link} key={project.id}>
                 {content}
@@ -157,80 +176,42 @@ const Home = () => {
             );
           })}
         </Slider>
+      </section>
 
-        {/* === Skills Section === */}
-<div data-aos="fade-up" className="mt-20 w-full">
-  <h2 className="text-2xl font-semibold mb-10">🧠 Skills</h2>
+      {/* === Skills Section === */}
+      <section data-aos="fade-up" className="mt-20 w-full">
+        <h2 className="text-2xl font-semibold mb-10 text-center">🧠 Skills</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center">
+          <SkillCard
+            title="🔍 Research"
+            skills={["User Interviews", "Cultural Probes", "Thematic Analysis", "Field Studies", "Affinity Mapping"]}
+          />
+          <SkillCard
+            title="🛠️ Prototyping"
+            skills={["Wireframes & Mockups", "Interactive Prototypes", "Design Systems", "Clickthrough Flows"]}
+          />
+          <SkillCard
+            title="🎨 UX Design"
+            skills={["Narrative Systems", "Gamification", "Emotional Design", "Information Architecture"]}
+          />
+          <SkillCard
+            title="🎮 Game Design"
+            skills={["Feedback Loops", "Character/World Building", "Player Motivation", "Playtesting"]}
+          />
+        </div>
+      </section>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
-    <SkillCard
-      title="🔍 Research"
-      skills={[
-        "User Interviews",
-        "Cultural Probes",
-        "Thematic Analysis",
-        "Field Studies",
-        "Affinity Mapping",
-      ]}
-      colorClass="bg-slate-100 text-slate-900"
-    />
-    <SkillCard
-      title="🛠️ Prototyping"
-      skills={[
-        "Wireframes & Mockups",
-        "Interactive Prototypes",
-        "Design Systems",
-        "Clickthrough Flows",
-      ]}
-      colorClass="bg-slate-100 text-slate-900"
-    />
-    <SkillCard
-      title="🎨 UX Design"
-      skills={[
-        "Narrative Systems",
-        "Gamification",
-        "Emotional Design",
-        "Information Architecture",
-      ]}
-      colorClass="bg-slate-100 text-slate-900"
-    />
-    <SkillCard
-      title="🎮 Game Design"
-      skills={[
-        "Feedback Loops",
-        "Character/World Building",
-        "Player Motivation",
-        "Playtesting",
-      ]}
-      colorClass="bg-slate-100 text-slate-900"
-    />
-  </div>
-</div>
-
-{/* === Tools Section === */}
-<div data-aos="fade-up" className="mt-20 w-full px-4">
-  <h2 className="text-2xl font-semibold mb-10">⚙️ Tools</h2>
-
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left px-2">
-    <SkillCard
-      title="🎨 Design Tools"
-      skills={["Figma", "Procreate", "Illustrator"]}
-      colorClass="bg-slate-100 text-slate-900"
-    />
-    <SkillCard
-      title="💻 Development Tools"
-      skills={["HTML/CSS", "JavaScript", "React", "VS Code", "Xcode/SwiftUI"]}
-      colorClass="bg-slate-100 text-slate-900"
-    />
-    <SkillCard
-      title="🤝 Collaboration Tools"
-      skills={["Miro", "Trello"]}
-      colorClass="bg-slate-100 text-slate-900"
-    />
-  </div>
-</div>
-
-       
+      {/* === Tools Section === */}
+      <section data-aos="fade-up" className="mt-20 w-full">
+        <h2 className="text-2xl font-semibold mb-10 text-center">⚙️ Tools</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center">
+          <SkillCard title="🎨 Design Tools" skills={["Figma", "Procreate", "Illustrator"]} />
+          <SkillCard
+            title="💻 Development Tools"
+            skills={["HTML/CSS", "JavaScript", "React", "VS Code", "Xcode/SwiftUI"]}
+          />
+          <SkillCard title="🤝 Collaboration Tools" skills={["Miro", "Trello"]} />
+        </div>
       </section>
     </div>
   );

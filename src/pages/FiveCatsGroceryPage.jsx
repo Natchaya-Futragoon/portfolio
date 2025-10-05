@@ -2,17 +2,17 @@ import React from "react";
 import ProjectPage from "../components/ProjectPage";
 import FiveCatsGroceryProcess from "../components/FiveCatsGroceryProcess";
 
-
 const FiveCatsGroceryPage = () => {
   return (
     <ProjectPage
       title="Five Cats Grocery"
-      video="/videos/fivecats_demo.mov" 
+      youtube="https://www.youtube.com/embed/tF8Sx8MXX3k?si=x0OJVGTFD_Glz160"
+      
       overview="Five Cats Grocery is a cozy, cat-themed grocery website designed for cat moms and dads. It features filterable categories, an interactive shopping cart linked to a backend server for real-time updates, and charming cat illustrations."
       timeline="4 weeks"
       team="Individual Project"
       role="Designer & Developer"
-      tools="HTML/CSS, Javascript, AJAX, MySQL"
+      tools="HTML/CSS, JavaScript, AJAX, MySQL"
       problem={
         <>
           This project began with a design brief to create a grocery website. Instead of building a generic store, I wanted to create something emotionally resonant and delightful. The idea: a playful grocery store made just for beloved cats and their humans. 
@@ -39,12 +39,11 @@ const FiveCatsGroceryPage = () => {
             <li>Custom cat drawings for character and delight</li>
           </ul>
         </>
-      
-    }
-  >
-    <FiveCatsGroceryProcess />
-  </ProjectPage>
-);
+      }
+    >
+      <FiveCatsGroceryProcess />
+    </ProjectPage>
+  );
 };
 
 export default FiveCatsGroceryPage;

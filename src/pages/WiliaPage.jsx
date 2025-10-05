@@ -8,11 +8,12 @@ const WiliaPage = () => {
       <ProjectPage
         title="Wilia"
         image={[
-          "/public/images/projects/wilia/wilia-1.jpg",
-          "/public/images/projects/wilia/wilia-2.jpg",
-          "/public/images/projects/wilia/wilia-3.jpg",
-          "/public/images/projects/wilia/wilia-4.jpg",
+          `${import.meta.env.BASE_URL}images/projects/wilia/Wilia-1.jpg`,
+          `${import.meta.env.BASE_URL}images/projects/wilia/Wilia-2.jpg`,
+          `${import.meta.env.BASE_URL}images/projects/wilia/Wilia-3.jpg`,
+          `${import.meta.env.BASE_URL}images/projects/wilia/Wilia-4.jpg`,
         ]}
+        
         overview="Wilia is a platform that aim to ransform WIL (Work integrated leartning experience by leveraging AI technologies to reduce friction in connections between key stakeholders (students, professionals, and academics), while optimising resources and delivering measurable value to all stakeholders (beyond the 3 groups, like leadership teams).
 "
 timeline="12 weeks (5 sprints)"
@@ -52,7 +53,7 @@ timeline="12 weeks (5 sprints)"
       {/* ✅ This part is now OUTSIDE the ProjectPage layout */}
       <section className="text-center my-10">
         <a
-  href="/files/wilia-case-study.pdf"
+  href={`${import.meta.env.BASE_URL}files/wilia-case-study.pdf`}
   target="_blank"
   rel="noopener noreferrer"
   className="inline-block bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition"

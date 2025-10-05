@@ -24,7 +24,7 @@ const ArtworkModal = ({ artwork, onClose }) => {
         <div className="relative" onMouseMove={handleMouseMove}>
           {isVideo ? (
             <video
-            src={`${import.meta.env.BASE_URL}${art.filename}`}
+            src={`${import.meta.env.BASE_URL}${artwork.filename}`}
               className="w-full max-h-[70vh] object-contain bg-white"
               controls
               autoPlay
@@ -34,7 +34,7 @@ const ArtworkModal = ({ artwork, onClose }) => {
           ) : (
             <img
               ref={imgRef}
-              src={`/images/artworks/${artwork.filename}`}
+              src={`${import.meta.env.BASE_URL}${artwork.filename}`}
               alt={artwork.title}
               className={`w-full max-h-[70vh] object-contain bg-white transition duration-200 ${
                 zoom ? "cursor-zoom-in" : ""

@@ -7,14 +7,15 @@ const SpeakMatePage = () => {
     <ProjectPage
       title="SpeakMate"
       image={[
-        "/public/images/projects/speakmate/speakmate-1.jpg",
-        "/public/images/projects/speakmate/speakmate-2.jpg",
-        "/public/images/projects/speakmate/speakmate-3.jpg",
-        "/public/images/projects/speakmate/speakmate-4.jpg",
-        "/public/images/projects/speakmate/speakmate-5.jpg",
-        "/public/images/projects/speakmate/speakmate-6.jpg",
-        "/public/images/projects/speakmate//speakmate-7.jpg",
+        `${import.meta.env.BASE_URL}images/projects/speakmate/speakmate-1.jpg`,
+        `${import.meta.env.BASE_URL}images/projects/speakmate/speakmate-2.jpg`,
+        `${import.meta.env.BASE_URL}images/projects/speakmate/speakmate-3.jpg`,
+        `${import.meta.env.BASE_URL}images/projects/speakmate/speakmate-4.jpg`,
+        `${import.meta.env.BASE_URL}images/projects/speakmate/speakmate-5.jpg`,
+        `${import.meta.env.BASE_URL}images/projects/speakmate/speakmate-6.jpg`,
+        `${import.meta.env.BASE_URL}images/projects/speakmate/speakmate-7.jpg`,
       ]}
+      
       overview="SpeakMate is a gamified platform designed to help non-native English speakers build consistent speaking habits through bite-sized daily challenges and emotional encouragement."
       timeline="4 weeks"
       team="5 members"
